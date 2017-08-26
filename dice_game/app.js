@@ -17,27 +17,33 @@ initGame(); // initialize game
 document.querySelector('.btn-roll').addEventListener('click', function(){
     if(gamePlaying) {
         // generate random number
-        var diceNum = Math.floor(Math.random() * 6) + 1;
+        var dice1 = Math.floor(Math.random() * 6) + 1;
+        var dice2 = Math.floor(Math.random() * 6) + 1;
+
         // display result
-        var diceDOM = document.querySelector('.dice');
-        diceDOM.style.display = 'block';
-        diceDOM.src = 'imgs/dice-' + diceNum + '.png';
+        document.getElementById('dice-1').style.display = 'block';
+        document.getElementById('dice-2').style.display = 'block';
+        document.getElementById('dice-1').src = 'imgs/dice-' + dice1 + '.png';
+        document.getElementById('dice-2').src = 'imgs/dice-' + dice2 + '.png';
 
-
-        // update round score ONLY IF the rolled number was not 1
+        /*
         if(diceNum === 6 && lastDiceValue === 6) {
             // player loses entire score
             scores[activePlayer] = 0;
             document.querySelector('#score-' + activePlayer).textContent = 0;
             switchPlayer();            
-        } else if(diceNum !== 1) { 
-            roundScore += diceNum; // add score
+        }
+        */
+
+        // update round score ONLY IF the rolled number was not 1
+        if(dice1 !== 1 && dice2 !== 1) { 
+            roundScore += dice1 + dice2; // add score
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
         } else {
             switchPlayer(); // change players
         }
         
-        lastDiceValue = diceNum;
+        // lastDiceValue = diceNum;
 
     }
     
@@ -86,7 +92,8 @@ function switchPlayer() {
 }
 
 function hideDice() {
-    document.querySelector('.dice').style.display = 'none';    
+    document.getElementById('dice-1').style.display = 'none';
+    document.getElementById('dice-2').style.display = 'none';
 }
 
 document.querySelector('.btn-new').addEventListener('click', initGame);
