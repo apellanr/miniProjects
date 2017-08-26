@@ -91,6 +91,20 @@ function initGame() {
     document.querySelector('.player-0-panel').classList.add('active');
 }
 
+/*
+ADDITIONAL RULES
+
+1. player loses entire score when rolling two 6's in a row. Next player turn
+(Note: Always save the previous dice roll in a separate variable)
+
+2. Add input field to DOM where players can set the winning score.
+(Note: Try utilizing .value property)
+
+3. Add another dice to the game, so that there are dices.
+- same rules when rolling a 1. 
+(Note: need CSS to position the second dice)
+
+*/
 
 //document.querySelector('.player-0-panel').classList.remove('active');
 //document.querySelector('.player-1-panel').classList.toggle('active');
