@@ -11,8 +11,15 @@ body {
     font-size: $body-text;
 }
 
+.container {
+    width: $content-width;
+    margin: 20px auto 0 auto;
+}
+
 .blog-post {
-    background-color: $blog-content;
+    width: $blog-width;
+    float: left;
+    padding-right: 30px;
     h1 {
         color: $header-color;
         font-size: $heading-size;
@@ -31,19 +38,21 @@ body {
 }
 
 .other-posts {
-    background-color: $other-content;
+    width: $side-content-width;
+    float: left;
 }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}   
 
 // AUTHOR SECTION
 .author-content {
-    background-color: $author-content;
+    padding-top: 20px;
+    border-top: 1px solid #808080;
     .author-name {
         font-size: 22px;
     }
-}
-
-.container {
-    width: $content-width;
-    margin-left: auto;
-    margin-right: auto;
 }
