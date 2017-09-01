@@ -1,17 +1,32 @@
 @import "partials/variables";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $global-font;
+    font-size: $body-text;
+}
+
 h1 {
-    font-family: $header-font;
     color: $header-color;
     font-size: $heading-size;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: $subhead-size;
+    margin-bottom: 10px;
 }
 
-p {
-    font-size: 18px;
+.main-text {
     text-align: justify;
-    font-family: $header-font;
+    margin-bottom: 20px;
+}
+
+.author-name {
+    font-size: 22px;
 }
