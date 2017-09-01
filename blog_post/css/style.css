@@ -22,3 +22,8 @@ h2 {
 
 .author-name {
   font-size: 22px; }
+
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
