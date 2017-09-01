@@ -11,24 +11,35 @@ body {
     font-size: $body-text;
 }
 
-h1 {
-    color: $header-color;
-    font-size: $heading-size;
-    margin-bottom: 20px;
+.blog-post {
+    background-color: $blog-content;
+    h1 {
+        color: $header-color;
+        font-size: $heading-size;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: $subhead-size;
+        margin-bottom: 10px;
+    }
+
+    .main-text {
+        text-align: justify;
+        margin-bottom: 20px;
+    }
 }
 
-h2 {
-    font-size: $subhead-size;
-    margin-bottom: 10px;
+.other-posts {
+    background-color: $other-content;
 }
 
-.main-text {
-    text-align: justify;
-    margin-bottom: 20px;
-}
-
-.author-name {
-    font-size: 22px;
+// AUTHOR SECTION
+.author-content {
+    background-color: $author-content;
+    .author-name {
+        font-size: 22px;
+    }
 }
 
 .container {
