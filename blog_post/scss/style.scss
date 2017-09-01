@@ -19,6 +19,7 @@ body {
 .blog-post {
     width: $blog-width;
     float: left;
+    position: relative;
     padding-right: 30px;
     h1 {
         color: $header-color;
@@ -31,15 +32,30 @@ body {
         margin-bottom: 10px;
     }
 
+    img {
+        height: 150px;
+        width: auto; // affects aspect ratio of img
+    }
+
     .main-text {
         text-align: justify;
         margin-bottom: 20px;
+    }
+
+    .date {
+        position: absolute;
+        top: 10px;
+        right: 30px; // no distance between right side of prt container / element
+
     }
 }
 
 .other-posts {
     width: $side-content-width;
     float: left;
+    .side-items {
+        margin-bottom: 40px; 
+    }
 }
 
 .clearfix:after {
@@ -52,7 +68,16 @@ body {
 .author-content {
     padding-top: 20px;
     border-top: 1px solid #808080;
+    img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        float: left;        
+    }
     .author-name {
         font-size: 22px;
+        float: left; // makes content align next to each other
+        margin-top: 35px;
+        margin-left: 10px;
     }
 }
