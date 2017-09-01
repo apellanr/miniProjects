@@ -1,0 +1,17 @@
+@import "partials/variables";
+
+h1 {
+    font-family: $header-font;
+    color: $header-color;
+    font-size: $heading-size;
+}
+
+h2 {
+    font-size: $subhead-size;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    font-family: $header-font;
+}
