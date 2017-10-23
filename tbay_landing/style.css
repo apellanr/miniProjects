@@ -115,3 +115,43 @@
 
 /* FOOTER  =================
 ======================== */
+.footer {
+    color: #fff;
+    background-color: #000;
+    padding: 5vh 0;
+}
+
+.footer-form {
+    background-color: #000;
+}
+
+.footer-submit {
+    text-transform: uppercase;
+    background-color: #333333 !important;;
+}
+
+.footer-col {
+    border-left: 1px solid #fff;
+}
+
+.footer-section {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: .7em;
+}
+
+.footer-li-items {
+    padding: 0;
+    list-style: none;
+}
+
+.address, .footer-li-items, .footer-text {
+    font-size: .6em;
+}
+
+#footer-form {
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: .6em;
+}
