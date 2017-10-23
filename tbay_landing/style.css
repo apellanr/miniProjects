@@ -1,5 +1,6 @@
-/* TOP NAVIGATION ==========
-======================== */
+/* --------------------------*/
+/* TOP NAVIGATION */
+/*---------------------------*/
 .top-nav {
     background-color: black;
     color: #fff;
@@ -11,7 +12,8 @@
     margin-top: .5vh;
 }
 
-.top-logo-text, .sub-text {
+.top-logo-text, 
+.sub-text {
     text-transform: uppercase;    
 }
 
@@ -26,7 +28,8 @@
     font-size: 11px;
 }
 
-.search, .account {
+.search, 
+.account {
     background-color: black;
     color: #fff;
     float: right;
@@ -45,8 +48,9 @@
     border-right: .5px solid white;
 }
 
-/* MAIN NAV ================
-======================== */
+/* --------------------------*/
+/* MAIN NAVIGATION */
+/*---------------------------*/
 .navbar-nav {
     font-size: .7em;
 }
@@ -56,8 +60,16 @@
     color: #000;
 }
 
-/* SIGN UP ================
-======================== */
+/* --------------------------*/
+/* IMAGES */
+/*---------------------------*/
+.images {
+    width: 100%;
+}
+
+/* --------------------------*/
+/* SIGN UP */
+/*---------------------------*/
 .signUp {
     background-color: #00b2cd;
     padding: 3vh 0;
@@ -76,10 +88,19 @@
     background-color: #005261 !important;
     color: white;
     text-transform: uppercase;
+    font-size: 10px !important;
 }
 
-/* DESC SECTION =============
-======================== */
+/* --------------------------*/
+/* INPUTS */
+/*---------------------------*/
+input::placeholder {
+    font-size: .7em;
+}
+
+/* --------------------------*/
+/* DESC SECTION */
+/*---------------------------*/
 .desc-section {
     padding: 8vh 0;
     background-color: #fff;
@@ -91,7 +112,8 @@
     font-weight: bold;
 }
 
-.sponsors, .lorem-text {
+.sponsors, 
+.lorem-text {
     font-size: .7em;
 }
 
@@ -100,8 +122,9 @@
     color: #9a9d9f;
 }
 
-/* CONTEST RULES ============
-======================== */
+/* --------------------------*/
+/* CONTEST RULES */
+/*---------------------------*/
 .contest-rules {
     background-color: #00b2cd;    
     color: white;
@@ -113,21 +136,42 @@
     margin-bottom: 0;
 }
 
-/* FOOTER  =================
-======================== */
+/* --------------------------*/
+/* FOOTER */
+/*---------------------------*/
 .footer {
     color: #fff;
     background-color: #000;
     padding: 5vh 0;
 }
 
-.footer-form {
-    background-color: #000;
+.address, .footer-li-items {
+    line-height: 175%;
 }
 
-.footer-submit {
+.address {
+    margin-bottom: 1px;
+}
+
+.icon-background {
+    color: #a8a8a8;
+}
+
+.social-links a {
+    color: #000;
+}
+
+.social-links:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+.footer-btn {
     text-transform: uppercase;
-    background-color: #333333 !important;;
+    background-color: #333333 !important;
+    border: none;
+    float: right;
+    margin-top: 1em;
+    cursor: pointer;
 }
 
 .footer-col {
@@ -145,14 +189,18 @@
     list-style: none;
 }
 
-.address, .footer-li-items, .footer-text {
-    font-size: .6em;
-    color: #a8a8a8;
-}
-
 #footer-form {
     background-color: #000;
     border: 1px solid #fff;
     color: #fff;
     font-size: .6em;
 }
+
+.address, 
+.footer-li-items, 
+.footer-text,
+.footer-btn {
+    font-size: .6em;
+    color: #a8a8a8;
+}
+
