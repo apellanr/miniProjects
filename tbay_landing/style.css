@@ -45,8 +45,73 @@
     border-right: .5px solid white;
 }
 
-/* BUTTONS ================
+/* MAIN NAV ================
 ======================== */
+.navbar-nav {
+    font-size: .7em;
+}
 
+.nav-link {
+    text-transform: uppercase;
+    color: #000;
+}
 
+/* SIGN UP ================
+======================== */
+.signUp {
+    background-color: #00b2cd;
+    padding: 3vh 0;
+}
 
+.signup_header {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.signup_subheader {
+    font-size: .6em;
+}
+
+.signup_button {
+    background-color: #005261 !important;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* DESC SECTION =============
+======================== */
+.desc-section {
+    padding: 8vh 0;
+    background-color: #fff;
+}
+
+.aloha-awaits {
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.sponsors, .lorem-text {
+    font-size: .7em;
+}
+
+.lorem-text {
+    line-height: 200%;
+    color: #9a9d9f;
+}
+
+/* CONTEST RULES ============
+======================== */
+.contest-rules {
+    background-color: #00b2cd;    
+    color: white;
+    font-size: .7em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 3vh 0;
+    text-transform: uppercase;    
+    margin-bottom: 0;
+}
+
+/* FOOTER  =================
+======================== */
