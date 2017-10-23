@@ -136,8 +136,8 @@
 
 .footer-section {
     margin-bottom: 0;
-    font-weight: bold;
     font-size: .7em;
+    color: #f0f0f0;
 }
 
 .footer-li-items {
@@ -147,6 +147,7 @@
 
 .address, .footer-li-items, .footer-text {
     font-size: .6em;
+    color: #a8a8a8;
 }
 
 #footer-form {
